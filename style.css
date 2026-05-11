@@ -982,27 +982,6 @@ a.contact-card:hover {
   box-shadow: 0 0 40px rgba(0,212,255,0.18), inset 0 0 50px rgba(0,212,255,0.08);
 }
 
-.iso-cube {
-  position:absolute;
-  width:90px;
-  height:90px;
-  background: linear-gradient(135deg, rgba(0,212,255,0.25), rgba(132,0,255,0.12));
-  border:1px solid rgba(0,212,255,0.4);
-  backdrop-filter: blur(8px);
-  transform-style: preserve-3d;
-  animation: floatCube 7s ease-in-out infinite;
-  box-shadow: 0 0 30px rgba(0,212,255,0.18);
-}
-
-.cube-1 { top:110px; left:110px; }
-.cube-2 {
-  width:60px;
-  height:60px;
-  top:240px;
-  left:260px;
-  animation-delay:1.5s;
-}
-
 .iso-ring {
   position:absolute;
   inset:80px;
@@ -1076,4 +1055,19 @@ a.contact-card:hover {
     transform: scale(.75);
     right:-80px;
   }
+}
+
+.nav-item{
+ animation: navFloat 4s ease-in-out infinite;
+}
+.nav-item:nth-child(2){animation-delay:.5s}
+.nav-item:nth-child(3){animation-delay:1s}
+.nav-item:nth-child(4){animation-delay:1.5s}
+@keyframes navFloat{
+ 0%,100%{transform:translateY(0px);}
+ 50%{transform:translateY(-8px);}
+}
+.nav-item:hover{
+ transform:translateY(-10px) scale(1.08)!important;
+ box-shadow:0 0 25px rgba(0,212,255,.45);
 }
