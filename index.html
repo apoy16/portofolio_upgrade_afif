@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Ngafifudin – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       FLOATING ICON NAVBAR
+  ════════════════════════════════════════ -->
+  <nav class="floating-nav" id="floatingNav">
+    <a href="#home" class="nav-item" data-label="Home" title="Home">
+      <!-- Monitor / Home icon -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="3" width="20" height="14" rx="2"/>
+        <line x1="8" y1="21" x2="16" y2="21"/>
+        <line x1="12" y1="17" x2="12" y2="21"/>
+      </svg>
+      <span class="nav-label">Home</span>
+    </a>
+    <a href="#about" class="nav-item" data-label="About" title="About">
+      <!-- Circuit / CPU icon -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="7" y="7" width="10" height="10" rx="1"/>
+        <line x1="9" y1="7" x2="9" y2="4"/><line x1="12" y1="7" x2="12" y2="4"/><line x1="15" y1="7" x2="15" y2="4"/>
+        <line x1="9" y1="20" x2="9" y2="17"/><line x1="12" y1="20" x2="12" y2="17"/><line x1="15" y1="20" x2="15" y2="17"/>
+        <line x1="7" y1="9" x2="4" y2="9"/><line x1="7" y1="12" x2="4" y2="12"/><line x1="7" y1="15" x2="4" y2="15"/>
+        <line x1="20" y1="9" x2="17" y2="9"/><line x1="20" y1="12" x2="17" y2="12"/><line x1="20" y1="15" x2="17" y2="15"/>
+      </svg>
+      <span class="nav-label">About</span>
+    </a>
+    <a href="#projects" class="nav-item" data-label="Projek" title="Projek">
+      <!-- Code / Terminal icon -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="16 18 22 12 16 6"/>
+        <polyline points="8 6 2 12 8 18"/>
+      </svg>
+      <span class="nav-label">Projek</span>
+    </a>
+    <a href="#contact" class="nav-item" data-label="Kontak" title="Kontak">
+      <!-- Wifi/Signal icon -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+        <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+        <circle cx="12" cy="20" r="1" fill="currentColor"/>
+      </svg>
+      <span class="nav-label">Kontak</span>
+    </a>
+  </nav>
+
+  <!-- ════════════════════════════════════════
+       SECTION 1: HERO
+  ════════════════════════════════════════ -->
+  <section id="home" class="hero-section">
+    <!-- Animated Tech Background Canvas -->
+    <canvas id="techCanvas"></canvas>
+
+    <!-- Floating decorative tech particles -->
+    <div class="tech-particles">
+      <div class="particle p1">
+        <!-- HTML tag icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+      </div>
+      <div class="particle p2">
+        <!-- Shield / Security -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="particle p3">
+        <!-- Database -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+      </div>
+      <div class="particle p4">
+        <!-- Wrench / Hardware -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <div class="particle p5">
+        <!-- Globe / Web -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <div class="particle p6">
+        <!-- Lock / Security -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+      <div class="particle p7">
+        <!-- Monitor -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <div class="particle p8">
+        <!-- Terminal -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Available for Projects</span>
+      </div>
+
+      <p class="hero-greeting">Halo, saya</p>
+      <h1 class="hero-name">
+        <span class="name-highlight">Muhammad</span>
+        <br>Ngafifudin
+      </h1>
+
+      <div class="hero-role">
+        <span class="role-prefix">// </span>
+        <span class="typewriter" id="typewriter"></span>
+        <span class="cursor-blink">_</span>
+      </div>
+
+      <p class="hero-desc">
+        Mahasiswa Sistem Informasi di Universitas Komputama, antusias dengan dunia IT dan teknisnya. Siap berkontribusi dalam proyek teknologi nyata.
+      </p>
+
+      <div class="hero-skills-tags">
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Keamanan Digital</span>
+        <span class="skill-tag">Hardware</span>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          Lihat Proyek
+        </a>
+        <a href="#contact" class="btn-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
+          Hubungi Saya
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image-wrapper">
+      <div class="image-ring ring-outer"></div>
+      <div class="image-ring ring-inner"></div>
+      <div class="image-ring ring-pulse"></div>
+      <div class="hero-image-frame">
+        <img src="https://apoy16.github.io/Portofolioku/assets/profile-work.png" alt="Ngafifudin bekerja" class="hero-img" />
+        <div class="image-overlay"></div>
+        <!-- Corner decorations -->
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+      </div>
+      <div class="stat-badge stat-1">
+        <span class="stat-num">2+</span>
+        <span class="stat-txt">Proyek</span>
+      </div>
+      <div class="stat-badge stat-2">
+        <span class="stat-num">100%</span>
+        <span class="stat-txt">Semangat</span>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+
+    <div class="isometric-scene">
+      <div class="iso-platform"></div>
+      <div class="iso-cube cube-1"></div>
+      <div class="iso-cube cube-2"></div>
+      <div class="iso-ring"></div>
+      <div class="hologram-card holo-1">
+        <span>SYSTEM STATUS</span>
+        <strong>ONLINE</strong>
+      </div>
+      <div class="hologram-card holo-2">
+        <span>NETWORK</span>
+        <strong>98%</strong>
+      </div>
+      <div class="orbit-line orbit-1"></div>
+      <div class="orbit-line orbit-2"></div>
+    </div>
+
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SECTION 2: ABOUT
+  ════════════════════════════════════════ -->
+  <section id="about" class="about-section">
+    <div class="section-label">// tentang saya</div>
+    <h2 class="section-title">About <span class="accent">Me</span></h2>
+
+    <div class="about-grid">
+      <div class="about-photo-col">
+        <div class="about-photo-wrap">
+          <img src="https://apoy16.github.io/Portofolioku/assets/profile-formal.png" alt="Foto Formal" />
+          <div class="photo-border"></div>
+        </div>
+        <div class="about-info-list">
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Cimanggu, Jawa Tengah
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            Sistem Informasi – UNIKMA
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
+            +62 857-9940-7464
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            apoybang16@gmail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text-col">
+        <p class="about-bio">
+          Saya adalah mahasiswa aktif Jurusan Sistem Informasi di <strong>Universitas Komputama</strong> yang memiliki ketertarikan besar terhadap dunia IT — mulai dari pengembangan web, keamanan digital, hingga teknis perangkat keras.
+        </p>
+        <p class="about-bio">
+          Dengan semangat eksplorasi yang tinggi, saya aktif mengembangkan skill melalui proyek nyata dan penelitian. Saya percaya bahwa teknologi bukan hanya alat, tapi medium untuk menciptakan solusi bermakna.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+            </div>
+            <span>HTML / CSS</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <span>Sistem Informasi</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <span>Hardware Komputer</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span>Keamanan Digital</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <span>Analisis Sistem</span>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-box">
+            <span class="stat-n">2+</span>
+            <span class="stat-l">Proyek Selesai</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <span class="stat-n">1+</span>
+            <span class="stat-l">Tahun Belajar</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <span class="stat-n">100%</span>
+            <span class="stat-l">Semangat</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SECTION 3: PROJECTS
+  ════════════════════════════════════════ -->
+  <section id="projects" class="projects-section">
+    <div class="section-label">// hasil karya</div>
+    <h2 class="section-title">My <span class="accent">Projects</span></h2>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-type">Artikel / Edukasi</div>
+        <div class="project-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="project-title">Waspadai Deepfake</h3>
+        <p class="project-desc">
+          Artikel edukasi yang membahas ancaman deepfake — khususnya penipuan menggunakan suara orang terdekat — disertai tanda-tanda yang perlu diwaspadai. Diterbitkan di website resmi Universitas Komputama.
+        </p>
+        <div class="project-tags">
+          <span>Penulisan</span>
+          <span>Edukasi Digital</span>
+          <span>Keamanan</span>
+        </div>
+        <a href="https://unikma.ac.id/2026/02/09/hati-hati-deepfake-penipuan-suara-orang-terdekat-simak-tanda-tandanya/" target="_blank" class="project-link">
+          Baca Artikel
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+        <div class="card-glow"></div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-type">Web App</div>
+        <div class="project-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3 class="project-title">Sistem Lab Monitoring</h3>
+        <p class="project-desc">
+          Aplikasi web untuk memonitor kondisi laboratorium komputer secara real-time. Dibangun menggunakan HTML, CSS, dan JavaScript sebagai solusi pengelolaan fasilitas lab yang lebih efisien.
+        </p>
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <a href="https://replit.com/@cyelaola/HTML-CSS-JS-Static-1" target="_blank" class="project-link">
+          Lihat Proyek
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+        <div class="card-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SECTION 4: CONTACT
+  ════════════════════════════════════════ -->
+  <section id="contact" class="contact-section">
+    <div class="section-label">// hubungi saya</div>
+    <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+    <p class="contact-subtitle">Punya proyek, ide, atau sekadar ingin berdiskusi soal teknologi? Jangan ragu untuk menghubungi saya.</p>
+
+    <div class="contact-grid">
+      <div class="contact-links">
+        <a href="https://wa.me/6285799407464" target="_blank" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
+          </div>
+          <div>
+            <div class="contact-card-title">WhatsApp</div>
+            <div class="contact-card-val">+62 857-9940-7464</div>
+          </div>
+          <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+
+        <a href="mailto:apoybang16@gmail.com" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact-card-title">Email</div>
+            <div class="contact-card-val">apoybang16@gmail.com</div>
+          </div>
+          <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+
+        <div class="contact-card no-link">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-card-title">Lokasi</div>
+            <div class="contact-card-val">Cimanggu, Jawa Tengah, Indonesia</div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label>Nama</label>
+          <input type="text" placeholder="Nama lengkap kamu" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="email@contoh.com" required />
+        </div>
+        <div class="form-group">
+          <label>Pesan</label>
+          <textarea placeholder="Tulis pesanmu di sini..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Kirim Pesan
+        </button>
+        <div class="form-success" id="formSuccess">✓ Pesan berhasil dikirim! Terima kasih.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-logo">{MN}</div>
+    <p>© 2025 <strong>Muhammad Ngafifudin</strong>. Dibuat dengan ❤ & kopi.</p>
+    <div class="footer-links">
+      <a href="https://wa.me/6285799407464">WhatsApp</a>
+      <a href="mailto:apoybang16@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
