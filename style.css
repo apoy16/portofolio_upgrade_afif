@@ -1089,7 +1089,7 @@ a.contact-card:hover {
 
 /* PROJECT */
 .floating-nav .nav-item:nth-child(3){
-    top: 280px;
+    top: 450px;
     left: -90px;
 
     animation-delay: 2.1s;
@@ -1097,8 +1097,8 @@ a.contact-card:hover {
 
 /* CONTACT */
 .floating-nav .nav-item:nth-child(4){
-    top: 430px;
-    left: -260px;
+    top: 490px;
+    left: -150px;
 
     animation-delay: 3s;
 }
