@@ -1160,3 +1160,95 @@ a.contact-card:hover {
         transform: translateY(0px);
     }
 }
+
+/* =====================================
+   FINAL FUTURISTIC FLOATING CAPSULE NAV
+===================================== */
+
+.floating-nav .nav-item{
+
+    width: 135px !important;
+    height: 52px !important;
+
+    border-radius: 18px !important;
+
+    background: rgba(10,18,28,0.96) !important;
+
+    border: 1px solid rgba(0,212,255,0.22) !important;
+
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 10px !important;
+
+    padding: 0 14px !important;
+
+    box-shadow:
+        0 0 18px rgba(0,212,255,0.10) !important;
+
+    overflow: hidden;
+}
+
+/* ICON */
+.floating-nav .nav-item svg{
+
+    width: 18px !important;
+    height: 18px !important;
+
+    margin: 0 !important;
+
+    flex-shrink: 0;
+}
+
+/* TEXT */
+.floating-nav .nav-label{
+
+    position: static !important;
+
+    opacity: 1 !important;
+
+    transform: none !important;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    padding: 0 !important;
+
+    margin: 0 !important;
+
+    color: white !important;
+
+    font-size: 12px !important;
+
+    letter-spacing: 1px;
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    white-space: nowrap;
+}
+
+/* HAPUS PANAH LABEL */
+.floating-nav .nav-label::after{
+    display: none !important;
+}
+
+/* HOVER */
+.floating-nav .nav-item:hover{
+
+    transform: translateY(-5px) scale(1.05) !important;
+
+    background: rgba(0,212,255,0.12) !important;
+
+    box-shadow:
+        0 0 22px rgba(0,212,255,0.30) !important;
+}
