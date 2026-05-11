@@ -1027,70 +1027,83 @@ a.contact-card:hover {
 
     position: absolute;
 
-    width: 58px;
-    height: 58px;
+    width: 62px;
+    height: 62px;
 
     border-radius: 50% !important;
 
-    background: rgba(0,212,255,0.08) !important;
+    background:
+    radial-gradient(
+        circle at top left,
+        rgba(255,255,255,0.16),
+        rgba(0,212,255,0.08)
+    ) !important;
 
-    border: 1px solid rgba(0,212,255,0.3) !important;
+    border: 1px solid rgba(0,212,255,0.28) !important;
 
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(14px);
 
     box-shadow:
-        0 0 18px rgba(0,212,255,0.18),
-        inset 0 0 12px rgba(0,212,255,0.05);
+        0 0 20px rgba(0,212,255,0.15),
+        0 0 50px rgba(0,212,255,0.08),
+        inset 0 0 20px rgba(255,255,255,0.05);
 
-    transition: 0.35s ease;
+    transition: all 0.4s ease;
 
     animation: bubbleFloat 5s ease-in-out infinite;
 }
-
 /* posisi abstrak */
 
 /* HOME */
 /* HOME */
+/* HOME */
 .floating-nav .nav-item:nth-child(1){
-    top: 10px;
-    left: 140px;
+    top: 0px;
+    left: 150px;
 
     animation-delay: 0s;
 }
 
 /* ABOUT */
 .floating-nav .nav-item:nth-child(2){
-    top: 100px;
-    left: 60px;
+    top: 95px;
+    left: 40px;
 
     animation-delay: 1s;
 }
 
 /* PROJECT */
 .floating-nav .nav-item:nth-child(3){
-    top: 190px;
-    left: 150px;
+    top: 200px;
+    left: 170px;
 
     animation-delay: 2s;
 }
 
 /* CONTACT */
 .floating-nav .nav-item:nth-child(4){
-    top: 280px;
-    left: 90px;
+    top: 310px;
+    left: 80px;
 
     animation-delay: 3s;
 }
 /* hover */
 .floating-nav .nav-item:hover{
 
-    transform: scale(1.1);
+    transform: scale(1.12);
 
-    background: rgba(0,212,255,0.16) !important;
+    background:
+    radial-gradient(
+        circle at top left,
+        rgba(255,255,255,0.22),
+        rgba(0,212,255,0.18)
+    ) !important;
 
     box-shadow:
-        0 0 20px rgba(0,212,255,0.5),
-        0 0 50px rgba(0,212,255,0.25);
+        0 0 25px rgba(0,212,255,0.55),
+        0 0 80px rgba(0,212,255,0.25);
+
+    border-color: rgba(0,212,255,0.7) !important;
 }
 
 /* icon */
