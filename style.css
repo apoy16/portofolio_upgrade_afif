@@ -1062,33 +1062,34 @@ a.contact-card:hover {
 /* HOME */
 /* HOME */
 /* HOME */
+/* HOME */
 .floating-nav .nav-item:nth-child(1){
-    top: 20px;
-    left: -40px;
+    top: -10px;
+    left: -120px;
 
     animation-delay: 0s;
 }
 
 /* ABOUT */
 .floating-nav .nav-item:nth-child(2){
-    top: 120px;
-    left: -120px;
+    top: 95px;
+    left: -250px;
 
     animation-delay: 1s;
 }
 
 /* PROJECT */
 .floating-nav .nav-item:nth-child(3){
-    top: 230px;
-    left: 10px;
+    top: 240px;
+    left: -70px;
 
     animation-delay: 2s;
 }
 
 /* CONTACT */
 .floating-nav .nav-item:nth-child(4){
-    top: 340px;
-    left: -90px;
+    top: 360px;
+    left: -210px;
 
     animation-delay: 3s;
 }
