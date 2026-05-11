@@ -999,96 +999,114 @@ a.contact-card:hover {
 /* =========================
    FLOATING FUTURISTIC NAV
 ========================= */
+/* ===============================
+   FLOATING HERO ICON BUBBLES
+================================ */
 
-.nav-container {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+/* nav hanya di hero */
+.floating-nav{
+    position: absolute !important;
 
-    position: fixed;
-    right: 50px;
+    right: 80px;
     top: 50%;
     transform: translateY(-50%);
 
-    z-index: 9999;
+    width: 260px;
+    height: 350px;
+
+    z-index: 10;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
 }
 
-/* Floating bubble icon */
-.nav-container .nav-item {
-    width: 72px;
-    height: 72px;
+/* bubble icon */
+.floating-nav .nav-item{
 
-    border-radius: 50%;
+    position: absolute;
 
-    border: 2px solid rgba(0,210,255,0.7);
+    width: 58px;
+    height: 58px;
 
-    background: rgba(0, 210, 255, 0.08);
+    border-radius: 50% !important;
 
-    backdrop-filter: blur(12px);
+    background: rgba(0,212,255,0.08) !important;
 
-    display: flex;
-    flex-direction: column;
+    border: 1px solid rgba(0,212,255,0.3) !important;
 
-    align-items: center;
-    justify-content: center;
+    backdrop-filter: blur(10px);
 
-    color: #fff;
-    text-decoration: none;
+    box-shadow:
+        0 0 18px rgba(0,212,255,0.18),
+        inset 0 0 12px rgba(0,212,255,0.05);
 
     transition: 0.35s ease;
 
-    box-shadow:
-        0 0 18px rgba(0,210,255,0.25),
-        inset 0 0 18px rgba(0,210,255,0.08);
-
-    animation: floating 4s ease-in-out infinite;
+    animation: bubbleFloat 5s ease-in-out infinite;
 }
 
-/* Delay tiap icon */
-.nav-container .nav-item:nth-child(1){
+/* posisi abstrak */
+
+/* HOME */
+.floating-nav .nav-item:nth-child(1){
+    top: 10px;
+    left: 100px;
+
     animation-delay: 0s;
 }
 
-.nav-container .nav-item:nth-child(2){
+/* ABOUT */
+.floating-nav .nav-item:nth-child(2){
+    top: 120px;
+    left: 10px;
+
     animation-delay: 1s;
 }
 
-.nav-container .nav-item:nth-child(3){
+/* PROJECT */
+.floating-nav .nav-item:nth-child(3){
+    top: 170px;
+    left: 170px;
+
     animation-delay: 2s;
 }
 
-.nav-container .nav-item:nth-child(4){
+/* CONTACT */
+.floating-nav .nav-item:nth-child(4){
+    top: 280px;
+    left: 70px;
+
     animation-delay: 3s;
 }
 
-/* Hover */
-.nav-container .nav-item:hover {
-    transform: translateY(-6px) scale(1.08);
+/* hover */
+.floating-nav .nav-item:hover{
+
+    transform: scale(1.1);
+
+    background: rgba(0,212,255,0.16) !important;
 
     box-shadow:
-        0 0 25px #00d2ff,
-        0 0 60px rgba(0,210,255,0.5);
-
-    background: rgba(0,210,255,0.16);
+        0 0 20px rgba(0,212,255,0.5),
+        0 0 50px rgba(0,212,255,0.25);
 }
 
-/* SVG icon */
-.nav-container .nav-item svg{
-    width: 24px;
-    height: 24px;
-    margin-bottom: 5px;
+/* icon */
+.floating-nav .nav-item svg{
+    width: 20px;
+    height: 20px;
 }
 
-/* Text */
-.nav-container .nav-item span {
-    font-size: 10px;
+/* text */
+.floating-nav .nav-label{
+    font-size: 9px;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    opacity: 0.85;
 }
 
-/* Floating animation */
-@keyframes floating {
+/* floating animation */
+@keyframes bubbleFloat{
 
     0%{
         transform: translateY(0px);
