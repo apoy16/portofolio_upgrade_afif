@@ -1071,25 +1071,34 @@ a.contact-card:hover {
 }
 
 /* ABOUT */
-.floating-nav .nav-item:nth-child(2){
-    top: 95px;
-    left: -250px;
+/* HOME */
+.floating-nav .nav-item:nth-child(1){
+    top: -40px;
+    left: -180px;
 
-    animation-delay: 1s;
+    animation-delay: 0s;
+}
+
+/* ABOUT */
+.floating-nav .nav-item:nth-child(2){
+    top: 140px;
+    left: -320px;
+
+    animation-delay: 1.3s;
 }
 
 /* PROJECT */
 .floating-nav .nav-item:nth-child(3){
-    top: 240px;
-    left: -70px;
+    top: 280px;
+    left: -90px;
 
-    animation-delay: 2s;
+    animation-delay: 2.1s;
 }
 
 /* CONTACT */
 .floating-nav .nav-item:nth-child(4){
-    top: 360px;
-    left: -210px;
+    top: 430px;
+    left: -260px;
 
     animation-delay: 3s;
 }
