@@ -1027,28 +1027,30 @@ a.contact-card:hover {
 
     position: absolute;
 
-    width: 62px;
-    height: 62px;
+    width: 120px;
+    height: 52px;
 
-    border-radius: 50% !important;
+    border-radius: 18px;
 
-    background:
-    radial-gradient(
-        circle at top left,
-        rgba(255,255,255,0.16),
-        rgba(0,212,255,0.08)
-    ) !important;
+    background: rgba(10,18,28,0.88);
 
-    border: 1px solid rgba(0,212,255,0.28) !important;
+    border: 1px solid rgba(0,212,255,0.28);
 
-    backdrop-filter: blur(14px);
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: all 0.35s ease;
 
     box-shadow:
-        0 0 20px rgba(0,212,255,0.15),
-        0 0 50px rgba(0,212,255,0.08),
-        inset 0 0 20px rgba(255,255,255,0.05);
-
-    transition: all 0.4s ease;
+        0 0 15px rgba(0,212,255,0.12);
 
     animation: bubbleFloat 5s ease-in-out infinite;
 }
@@ -1108,14 +1110,39 @@ a.contact-card:hover {
 
 /* icon */
 .floating-nav .nav-item svg{
-    width: 20px;
-    height: 20px;
+
+    width: 18px;
+    height: 18px;
+
+    flex-shrink: 0;
 }
 
 /* text */
 .floating-nav .nav-label{
-    font-size: 9px;
+
+    position: relative;
+
+    opacity: 1;
+
+    transform: none;
+
+    right: auto;
+
+    background: transparent;
+
+    border: none;
+
+    padding: 0;
+
+    color: #fff;
+
+    font-size: 12px;
+
     letter-spacing: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* floating animation */
