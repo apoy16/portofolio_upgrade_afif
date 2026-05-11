@@ -1061,29 +1061,37 @@ a.contact-card:hover {
 /* HOME */
 /* HOME */
 /* HOME */
+/* HOME */
 .floating-nav .nav-item:nth-child(1){
-    top: 0px;
-    left: 60px;
+    top: 20px;
+    left: -40px;
 
     animation-delay: 0s;
 }
 
 /* ABOUT */
 .floating-nav .nav-item:nth-child(2){
-    top: 95px;
-    left: -30px;
+    top: 120px;
+    left: -120px;
 
     animation-delay: 1s;
 }
 
 /* PROJECT */
 .floating-nav .nav-item:nth-child(3){
-    top: 200px;
-    left: 80px;
+    top: 230px;
+    left: 10px;
 
     animation-delay: 2s;
 }
 
+/* CONTACT */
+.floating-nav .nav-item:nth-child(4){
+    top: 340px;
+    left: -90px;
+
+    animation-delay: 3s;
+}
 /* CONTACT */
 .floating-nav .nav-item:nth-child(4){
     top: 305px;
